@@ -37,17 +37,17 @@ export const PopupProvider: React.FC<{ children: React.ReactNode }> = ({children
             const popup = document.getElementById('popup');
             
             if(popOuter && popup) {
-                requestAnimationFrame (() => {
-                    popup.style.transform = 'scale(0, 0)';
-                });
-                
                 setTimeout(() => {
                     popOuter.style.display = 'none';
                     setPopup('')
                 }, 300);
+
+                requestAnimationFrame (() => {
+                    popup.style.transform = 'scale(0, 0)';
+                });
             }
+            else if (popOuter) popOuter.style.display = 'none';
         }
-        
     }
 
     return (

@@ -1,10 +1,23 @@
 import { CloseImg, PopText, PopupDiv } from "./style";
 import Download from '../../Assets/Cardapio/download.svg';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Close from '../../Assets/Popup/close.svg';
 
 export default function DownPop() {
-    const [visibility, setVisibility] = useState(true)
+    const [visibility, setVisibility] = useState(true);
+
+    const isIos = () => {
+        const userAgent = window.navigator.userAgent.toLowerCase();
+        return /iphone|ipad|ipod/.test( userAgent );
+    }
+    // Detects if device is in standalone mode
+    const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+
+    useEffect(() => {
+        if (isIos() && !isInStandaloneMode()) setVisibility(true);
+        else setVisibility(false);
+    }, []);
+
     return (
         <PopupDiv style={{display: (visibility) ? '' : 'none'}}>
             <PopText>

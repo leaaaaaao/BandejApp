@@ -9,7 +9,6 @@ import * as serviceWorkerRegistration from './Service/serviceWorkerRegistration'
 
 /*----------------   CONTEXTOS   ----------------*/
 import { NotificationProvider } from './Contexts/PendingNotificationContext';
-import { InstallMessageProvider } from './Contexts/ShowInstallMessageContext';
 import { PopupProvider } from './Contexts/PopupContext';
 
 /*     Apagar quando a versão desktop estiver pronta     */
@@ -35,13 +34,11 @@ function App() {
     if((window.innerWidth/window.innerHeight) <= 1) {
         return (
             <React.StrictMode>
-                    <PopupProvider>
-                        <InstallMessageProvider>
-                            <NotificationProvider>
-                                <Router/>
-                            </NotificationProvider>
-                        </InstallMessageProvider>
-                    </PopupProvider>
+                <PopupProvider>
+                    <NotificationProvider>
+                        <Router/>
+                    </NotificationProvider>
+                </PopupProvider>
             </React.StrictMode>
         );
     }

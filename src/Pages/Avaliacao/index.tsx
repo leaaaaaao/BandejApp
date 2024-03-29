@@ -1,21 +1,20 @@
+import { useContext, useState } from "react";
+import { useForm } from 'react-hook-form';
+import { ToastContainer } from 'react-toastify';
+
+import { PopupContext } from "../../Contexts/PopupContext";
+
 import { AvaSection, Avadiv, Comentario,
         DateDiv, DateSelect, EmailInput, EnviarButton,
         AvaForm, TurnoButton, TurnoDiv, FormDiv,
         MensagemErro, DateIcon } from "./style";
 import { InfoSubtitle, InfoTitle } from "../Informacoes/style";
 
-import { useContext, useState } from "react";
-import { useForm } from 'react-hook-form';
-import { InstallMessageContext } from "../../Contexts/ShowInstallMessageContext";
-import { ToastContainer } from 'react-toastify';
-import { PopupContext } from "../../Contexts/PopupContext";
-
 import { formulario, enviar } from "../../Functions/Avaliacao/enviar";
 import { selecionarTurno } from '../../Functions/Avaliacao/avaliacao';
 
 import Nota from "../../Components/Nota";
 import Cabecalho from "../../Components/Cabecalho";
-import DownPop from "../../Components/PopUpIOS";
 import DropDown from "../../Components/DropDown";
 import datePicker from '../../Assets/Avaliacao/datePicker.svg';
 
@@ -24,7 +23,6 @@ import "react-datepicker/dist/react-datepicker.css";
 
 
 export default function Avaliacao() {
-    const { showInstallMessage } = useContext(InstallMessageContext);
     const { mostrarPopup, PopUp, Components:{PopTexto} } = useContext(PopupContext);
 
     /* Funções do useForm */
@@ -183,8 +181,6 @@ export default function Avaliacao() {
                     Enviar Avaliação
                 </EnviarButton>
             </AvaForm>
-    
-            { showInstallMessage && <DownPop/> }
         </Avadiv>
     );
 }

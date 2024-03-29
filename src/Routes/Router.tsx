@@ -20,11 +20,11 @@ export default function Routes() {
             return ('standalone' in window.navigator) && (window.navigator.standalone)
         else 
             return (window.matchMedia('(display-mode: standalone)').matches);
-    };   
+    };
 
     return (
         <Router basename='/'>
-            <GlobalComponents/>
+                <GlobalComponents/>
             <Switch>
                 <Route exact path='/'>
                     <Redirect to={localStorage.getItem("bandejapp:ruDefault")?
@@ -48,11 +48,8 @@ export default function Routes() {
                     {() => {
                         const ruDefault = localStorage.getItem("bandejapp:ruDefault");
 
-                        if (ruDefault) {
-                        return <Cardapio />;
-                        } else {
-                        return <Redirect to='/Restaurante' />;
-                        }
+                        if (ruDefault) return <Cardapio />;
+                        else return <Redirect to='/Restaurante' />;
                     }}
                 </Route>
 
