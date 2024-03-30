@@ -24,7 +24,8 @@ export default function Routes() {
 
     return (
         <Router basename='/'>
-                <GlobalComponents/>
+            <GlobalComponents/>
+
             <Switch>
                 <Route exact path='/'>
                     <Redirect to={localStorage.getItem("bandejapp:ruDefault")?

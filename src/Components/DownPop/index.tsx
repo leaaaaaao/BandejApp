@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import Close from '../../Assets/Popup/close.svg';
 
 export default function DownPop() {
-    const [visibility, setVisibility] = useState(true);
+    const [visibility, setVisibility] = useState(false);
 
     const isIos = () => {
         const userAgent = window.navigator.userAgent.toLowerCase();
-        return /iphone|ipad|ipod/.test( userAgent );
+        return /iphone|ipad|ipod/.test(userAgent);
     }
     // Detects if device is in standalone mode
     const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
@@ -19,10 +19,10 @@ export default function DownPop() {
     }, []);
 
     return (
-        <PopupDiv style={{display: (visibility) ? '' : 'none'}}>
+        <PopupDiv style={{ display: (visibility)? 'flex':'none'}}>
             <PopText>
                 Instale esse aplicativo no seu Iphone: aperte
-                <img width="15" height="15" src={Download} alt="Ícone de download"/>
+                <img width="15" height="15" src={Download} alt="Ícone de download" />
                 e depois Adicionar à tela inicial.
             </PopText>
 

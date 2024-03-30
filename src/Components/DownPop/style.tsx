@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { global } from "../../globalStyle";
 
 export const PopupDiv = styled.div `
-    display: flex;
+    display: none;
     width: 90%;
 
     position: fixed;
