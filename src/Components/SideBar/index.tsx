@@ -48,6 +48,7 @@ export default function SideBar() {
                                 body: "clicou no botão da sidebar",
                                 icon: "./icons/maskable_icon_x72.png",
                                 tag: "vibration-sample",
+                                badge: "./icons/maskable_icon_x72.png"
                             });
                         });
                     }}/>
