@@ -57,7 +57,7 @@ export default function Comunicados() {
                 {
                     aviso.pending = verificaPrecedenciaData(aviso.data)
                     if(aviso.pending){
-                        qtd++; 
+                        qtd++;
                     }
                 }
                 setQuantidadeNaoLidas(qtd);

@@ -14,12 +14,11 @@ import { PopupProvider } from './Contexts/PopupContext';
 /*     Apagar quando a versão desktop estiver pronta     */
 import Paisagem from './Pages/Paisagem/';
 
+ReactGA.initialize("G-KZT0DEH3ZS");
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
-
-ReactGA.initialize("G-KZT0DEH3ZS");
 
 function App() {
     const [proporcao, setProporcao] = useState(window.innerWidth/window.innerHeight);

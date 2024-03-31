@@ -50,7 +50,7 @@ export default function Cardapio() {
             tentativas++;
             try {
                 const data = await fetch(`${process.env.REACT_APP_CARDAPIO_API_URL}`) 
-                let post = await data.json(); 
+                let post = await data.json();
                 if(JSON.stringify(post) === "{}"){
                     throw new Error("ObjetoNulo");
                 }

@@ -41,18 +41,8 @@ export default function SideBar() {
     return (    
         <SideBarDiv id="sidebar">
             <SideHeader>
-                <LogoImg src={Logo} alt="Logo do aplicativo BandejApp."
-                    onClick={() => {
-                        navigator.serviceWorker.ready.then((registration) => {
-                            registration.showNotification("Clicou no botão", {
-                                body: "clicou no botão da sidebar",
-                                icon: "./icons/maskable_icon_x72.png",
-                                tag: "vibration-sample",
-                                badge: "./icons/maskable_icon_x72.png"
-                            });
-                        });
-                    }}/>
-                <Versao>Versão 1.0.3 · <MostrarCreditos onClick={() => mostrarPopup('creditos')}>
+                <LogoImg src={Logo} alt="Logo do aplicativo BandejApp."/>
+                <Versao>Versão 1.0.4 · <MostrarCreditos onClick={() => mostrarPopup('creditos')}>
                         Ver créditos
                     </MostrarCreditos>
                 </Versao>

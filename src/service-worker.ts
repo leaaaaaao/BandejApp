@@ -14,6 +14,9 @@ import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
 import { StaleWhileRevalidate } from 'workbox-strategies';
 
+import { onBackgroundMessage } from "firebase/messaging/sw";
+import FCM from './Service/serviceNotification';
+
 declare const self: ServiceWorkerGlobalScope;
 
 clientsClaim();
@@ -77,4 +80,8 @@ self.addEventListener('message', (event) => {
     }
 });
 
-// Any other custom service worker logic can go here.
+/*-------------------- Lógica extra para o Service Worker --------------------*/
+
+onBackgroundMessage(FCM, (payload) => {
+    console.log('[firebase-messaging-sw.js] Received background message ', payload);
+});

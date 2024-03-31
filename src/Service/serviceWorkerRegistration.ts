@@ -1,6 +1,8 @@
 // This optional code is used to register a service worker.
 // register() is not called by default.
 
+import { registrarNoFCM } from "./serviceNotification";
+
 // This lets the app load faster on subsequent visits in production, and gives
 // it offline capabilities. However, it also means that developers (and users)
 // will only see deployed updates on subsequent visits to a page, after all the
@@ -48,8 +50,6 @@ export function register(config?: Config) {
                         'This web app is being served cache-first by a service ' +
                         'worker. To learn more, visit https://cra.link/PWA'
                     );
-                    
-                    Notification.requestPermission().then((result) => {console.log(`Notificação ${result}`)});
                 });
             }
             else {
@@ -98,9 +98,11 @@ function registerValidSW(swUrl: string, config?: Config) {
                     }
                 }
             };
-        };
-    })
-    .catch((error) => {
+        }
+
+        registrarNoFCM(registration);
+
+    }).catch((error) => {
         console.error('Error during service worker registration:', error);
     });
 }
