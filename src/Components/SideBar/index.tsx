@@ -20,6 +20,7 @@ import Comun from '../../Assets/SideBar/comunicados.svg';
 import Info from '../../Assets/SideBar/sobrenos.svg';
 import Fale from '../../Assets/SideBar/faleconosco.svg';
 import LogoIC from '../../Assets/SideBar/LogoIC.svg';
+import LogoUFRJ from '../../Assets/SideBar/LogoUFRJ.svg';
 import LogoDevmob from '../../Assets/SideBar/LogoDevmob.svg';
 import { PopupContext } from "../../Contexts/PopupContext";
 import SideBarMobile from "./mobile";
