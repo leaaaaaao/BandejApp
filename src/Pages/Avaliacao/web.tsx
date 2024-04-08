@@ -20,6 +20,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 import PopUp from "../../Components/PopUp";
 import { PopTexto } from "../../Components/PopUp/style";
+import Footer from "../../Components/Footer";
 
 type AvaliacaoProps = {
     UseForm: UseFormReturn<formulario>;
@@ -209,6 +210,7 @@ export default function AvaliacaoWeb({UseForm, showInstallMessage, mostrarPopup,
             </AvaForm>
     
             { showInstallMessage && <DownPop/> }
+            <Footer/>
         </Avadiv>
     );
 }

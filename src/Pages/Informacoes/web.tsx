@@ -5,6 +5,7 @@ import {
     InfoUndertitle, InformDiv, InfoValor, BalaoInfo, SelecionaInfoDivBlock, SubBalaoInfo, BaloesContainer
 } from "./styleWeb";
 import DropDown from "../../Components/DropDown";
+import Footer from "../../Components/Footer";
 
 type InformacoesProps = {
     showInstallMessage: boolean;
@@ -95,6 +96,7 @@ export default function InformacoesWeb({ showInstallMessage, options, values, ru
                 showInstallMessage &&
                 <DownPop />
             }
+        <Footer/>
         </InformDiv>
     );
 }
