@@ -13,7 +13,7 @@ export const PratoDiv = styled.div `
     display: flex;
 
     width: 100%;
-    min-height: 12vh;
+    min-height: 100px;
 
     align-items: flex-start;
     padding: 1.2vw;
@@ -46,6 +46,10 @@ export const Tipo = styled.p `
     
     font-size: 24px;
     font-weight: 500;
+
+    @media (max-width: 1138px) {
+        font-size: 20px;
+    }
 `;
 
 export const Descricao = styled.p `
@@ -53,7 +57,6 @@ export const Descricao = styled.p `
     align-items: center;
 
     width: 94%;
-    height: 90px;
 
     font-family: ${global.fonts.quickSand};
     color: ${global.colors.cinzaPratos};
@@ -62,4 +65,8 @@ export const Descricao = styled.p `
     font-weight: 700;
 
     word-break: normal;
+
+    @media (max-width: 1138px) {
+        font-size: 20px;
+    }
 `;

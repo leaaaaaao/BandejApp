@@ -22,6 +22,7 @@ export const Selecionado = styled.div `
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     height: 4.6875vw;
     width: 100%;
 

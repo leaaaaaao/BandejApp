@@ -30,7 +30,7 @@ export default function Prato({emoji, descricao, ru}: info) {
     const { Descricao, Emoji, Linha, PratoDiv, Conteudo, Infos, Tipo } = ImportStyle(styleMobile, styleWeb);
 
     return(
-        <Conteudo style={{borderRadius: `${(emoji === 0 && window.innerWidth/window.innerHeight > 1) ? '0px' : Formatacao.bordaRedonda(emoji, 6)}`}}>
+        <Conteudo style={{borderRadius: `${(emoji === 0 && window.innerWidth/window.innerHeight > 1) ? '16px 16px 0px 0px' : Formatacao.bordaRedonda(emoji, 6)}`}}>
             <PratoDiv>
                 <Emoji src={(ru!=='mc')?`${icone[emoji]}`:`${iconeMc[emoji]}`} alt={(ru!=='mc')?`Ícone de ${tipoRefeicao[emoji]}`:`Ícone de ${tipoRefeicaoMc[emoji]}`}/>
                 <Infos>

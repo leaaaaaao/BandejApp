@@ -40,17 +40,17 @@ export default function Dia({hora, cardapio, ru}: horario) {
 
             <Menu style={{display: hora===0 || window.innerWidth/window.innerHeight > 1 ? 'flex':'none'}}>
                 {window.innerWidth/window.innerHeight > 1 && 
-                    <HoraDiv style={{color: global.colors.corHorario(0), borderRadius: Formatacao.bordaRedonda(0, 6)}}>
+                    <HoraDiv style={{color: global.colors.corHorario(0), borderRadius: Formatacao.bordaRedonda(0, 1), borderColor: global.colors.corHorario(0)}}>
                         <HoraConteudo>
                             <TituloHora>
                                 <IconeHora src={Almoco} alt=''/>
-                                <NomeHora>Almoço</NomeHora>
+                                <NomeHora>ALMOÇO</NomeHora>
                             </TituloHora>
                             <InfoHora>
                                 11:00h às 14:15h
                             </InfoHora>
                         </HoraConteudo>
-                        <Linha style={{background: `${global.colors.corHorario(0)}`}}/>
+                        {/* <Linha style={{background: `${global.colors.corHorario(0)}`}}/> */}
                     </HoraDiv>
                 }
                 <Prato
@@ -81,17 +81,17 @@ export default function Dia({hora, cardapio, ru}: horario) {
             
             <Menu style={{display: hora===1 || window.innerWidth/window.innerHeight > 1 ? 'flex':'none'}}>
                 {window.innerWidth/window.innerHeight > 1 && 
-                    <HoraDiv style={{color: global.colors.corHorario(1), borderRadius: Formatacao.bordaRedonda(0, 6)}}>
+                    <HoraDiv style={{color: global.colors.corHorario(1), borderRadius: Formatacao.bordaRedonda(0, 1), borderColor: global.colors.corHorario(1)}}>
                         <HoraConteudo>
                             <TituloHora>
-                                <IconeHora src={Jantar} alt=''/>
-                                <NomeHora>Jantar</NomeHora>
+                                <IconeHora src={Jantar} alt='' style={{width: '1.475vw', padding: '0.2vw'}}/>
+                                <NomeHora>JANTAR</NomeHora>
                             </TituloHora>
                             <InfoHora>
                                 17:30h às 20:00h
                             </InfoHora>
                         </HoraConteudo>
-                        <Linha style={{background: `${global.colors.corHorario(1)}`}}/>
+                        {/* <Linha style={{background: `${global.colors.corHorario(1)}`}}/> */}
                     </HoraDiv>
                 }
                 <Prato

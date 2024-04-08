@@ -22,7 +22,7 @@ export const DiaDiv = styled.div `
 
 export const Gluten = styled.div `
     display: flex;
-    flex: 0 0 40%;
+    flex: 0 0 95.5%;
     // height: 3vw;
 
     background: rgba(36, 82, 169, 0.2);
@@ -63,6 +63,18 @@ export const HoraDiv = styled.div `
     font-weight: 700;
 
     background: ${global.colors.branco};
+
+    margin-bottom: 8px;
+
+    box-shadow: 0px 2px 4px #00000014;
+
+    border-left: 8px solid black;
+
+    box-sizing: border-box;
+
+    @media (max-width: 1138px) {
+        font-size: 20px;
+    }
 `;
 
 export const HoraConteudo = styled.div `
@@ -86,6 +98,7 @@ export const IconeHora = styled.img `
 
 export const NomeHora = styled.span `
     font-family: ${global.fonts.quickSand};
+    letter-spacing: 2px;
 `;
 
 export const InfoHora = styled.span `

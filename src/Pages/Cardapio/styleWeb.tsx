@@ -57,6 +57,8 @@ export const Conteudo = styled.div `
     transition: margin-top 300ms ease-in-out;
     flex-direction: column;
     align-items: center;
+
+    margin-bottom: 5vw;
 `;
 
 export const AvisoAtt = styled.h1 `

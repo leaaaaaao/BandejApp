@@ -133,7 +133,7 @@ export default function Comunicados() {
                             style={{display: comentarios.length ? '' : 'none'}}>{`Marcar tudo como lido (${quantidadeNaoLidas})`}
                         </MensagensNaoLidas>
                     }
-                    <Container>
+                    <Container style={comentarios.length === 0 && window.innerWidth/window.innerHeight > 1 ? {display: 'none'} : {}}>
                         {
                         comentarios.map((comentario, index) => {
                             return (

@@ -13,6 +13,7 @@ import Creditos from "../PopUp/Creditos";
 import Logo from '../../Assets/SideBar/logo.svg';
 import Close from '../../Assets/Close.svg';
 import LogoIC from '../../Assets/SideBar/LogoIC.svg';
+import LogoUFRJ from '../../Assets/SideBar/LogoUFRJ.svg';
 import LogoDevmob from '../../Assets/SideBar/LogoDevmob.svg';
 
 type SideBarProps = { 
@@ -74,7 +75,7 @@ export default function SideBarMobile({pendingNotification, mostrarPopup, rotaAt
             </ItemsDiv>
 
             <InstitutoDiv>
-                <img src={LogoIC} style={{width: '35%'}}
+                <img src={LogoUFRJ} style={{width: '35%'}}
                 alt="Logo do Institudo de Computação da UFRJ."/>
                 <Linha/>
                 <img src={LogoDevmob} style={{width: '22%', padding: '0 6.5% 0 6.5%'}}

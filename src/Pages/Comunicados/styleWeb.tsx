@@ -23,7 +23,7 @@ export const BalaoSemMensagens = styled.div `
     align-items: center;
     justify-content: center;
 
-    margin-top: 1vw;
+    margin: auto 0;
     align-self: center;
 
     width: 91.1%;

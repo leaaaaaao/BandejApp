@@ -41,7 +41,7 @@ export const FormDiv = styled.div `
     padding: 24px;
     
     border-radius: 24px;
-    background-color: ${global.colors.cinza1};
+    background-color: ${global.colors.branco};
 `;
 
 export const SubFormDiv = styled.div `
