@@ -7,7 +7,7 @@ import { SelecionaInfoDiv, InfoArea, InfoBalao, InfoGrid, InfoSubtitle, InfoTitl
         InfoUndertitle, InformDiv, InfoValor, BalaoInfo, SelecionaInfoDivBlock } from "./styleMobile";
 import DropDown from "../../Components/DropDown";
 import InformacoesWeb from "./web";
-import InformacoesMobile from "./mobile.tsx";
+import InformacoesMobile from "./mobile";
 
 
 export default function Informacoes() {
