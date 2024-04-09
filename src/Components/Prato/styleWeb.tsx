@@ -7,6 +7,9 @@ export const Conteudo = styled.div `
     width: 100%;
 
     background: ${global.colors.branco};
+
+    box-shadow: 0px 2px 10px #00000040;
+    // box-shadow: 0px 2px 4px #00000014;
 `;
 
 export const PratoDiv = styled.div `

@@ -28,7 +28,7 @@ export const Gluten = styled.div `
     background: rgba(36, 82, 169, 0.2);
 
     margin: 0 30%;
-    padding: 8px 0;
+    padding: 12px 0;
 
     align-items: center;
     justify-content: center;
@@ -45,7 +45,7 @@ export const InfoIcon = styled.img `
 export const Aviso = styled.strong `
     font-family: ${global.fonts.quickSand};
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
 
     color: ${global.colors.azul};
 `;
@@ -68,7 +68,8 @@ export const HoraDiv = styled.div `
 
     box-shadow: 0px 2px 4px #00000014;
 
-    border-left: 8px solid black;
+    border-radius: 24px;
+    border-left: 12px solid black;
 
     box-sizing: border-box;
 

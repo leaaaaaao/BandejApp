@@ -40,7 +40,7 @@ export default function Dia({hora, cardapio, ru}: horario) {
 
             <Menu style={{display: hora===0 || window.innerWidth/window.innerHeight > 1 ? 'flex':'none'}}>
                 {window.innerWidth/window.innerHeight > 1 && 
-                    <HoraDiv style={{color: global.colors.corHorario(0), borderRadius: Formatacao.bordaRedonda(0, 1), borderColor: global.colors.corHorario(0)}}>
+                    <HoraDiv style={{color: global.colors.corHorario(0), borderColor: global.colors.corHorario(0)}}>
                         <HoraConteudo>
                             <TituloHora>
                                 <IconeHora src={Almoco} alt=''/>
@@ -81,7 +81,7 @@ export default function Dia({hora, cardapio, ru}: horario) {
             
             <Menu style={{display: hora===1 || window.innerWidth/window.innerHeight > 1 ? 'flex':'none'}}>
                 {window.innerWidth/window.innerHeight > 1 && 
-                    <HoraDiv style={{color: global.colors.corHorario(1), borderRadius: Formatacao.bordaRedonda(0, 1), borderColor: global.colors.corHorario(1)}}>
+                    <HoraDiv style={{color: global.colors.corHorario(1), borderColor: global.colors.corHorario(1)}}>
                         <HoraConteudo>
                             <TituloHora>
                                 <IconeHora src={Jantar} alt='' style={{width: '1.475vw', padding: '0.2vw'}}/>

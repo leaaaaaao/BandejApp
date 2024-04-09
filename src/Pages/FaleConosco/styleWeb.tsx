@@ -25,7 +25,7 @@ export const BaloesDiv = styled.div `
     background-color: ${global.colors.cinza1};
     border-radius: 24px;
 
-    margin-top: 32px;
+    margin: 64px 0;
 `;
 
 export const Balao = styled.section `
@@ -39,6 +39,9 @@ export const Balao = styled.section `
     border-radius: 16px;
 
     background: ${global.colors.branco};
+
+    box-shadow: 0px 2px 10px #00000040;
+    // box-shadow: 0px 2px 4px #00000014;
 `;
 
 export const BalaoBanner = styled.img `
