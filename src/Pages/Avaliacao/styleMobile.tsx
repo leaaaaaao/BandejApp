@@ -85,8 +85,7 @@ export const SelecionaAvaDivBlock = styled.div`
     justify-content: center;
     align-items: start;
 
-    width: 91.1vw;
-    width: 91.1vw;
+    width: 86.25vw;
 
     border-radius: 16px;
     background: ${global.colors.branco};
@@ -94,8 +93,9 @@ export const SelecionaAvaDivBlock = styled.div`
 
 export const SelecionaAvaDiv = styled.div `
     display: block;
-    width: 91.1%;
-    height: 8vh;    
+    width: 100%;
+    height: 8vh;
+    margin-left: -1.875vw;
 `;
 
 /*----------------------------------------------------------------------------*/
