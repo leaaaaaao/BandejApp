@@ -19,13 +19,12 @@ export const SelecionaInfoDivBlock = styled.div`
     justify-content: center;
     align-items: center;
 
-    width: 67.11vw;
+    width: 74.375vw;
     height: 4.69vw;
 
-
-    border-radius: 24px;
-    padding: 1.95vw;
-    margin: 26px 0 15px;
+    border-radius: 24px 24px 0 0;
+    padding: 1.875vw;
+    margin-top: 1.875vw;
 
     background: ${global.colors.cinza1};
 `;
@@ -41,76 +40,70 @@ export const SelecionaInfoDiv = styled.div `
 export const BaloesContainer = styled.section `
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
-    width: 67.11vw;
-    height: 20vw;
+    width: 74.375vw;
+    height: 19.375vw;                                 
 
-    padding: 1.95vw;
-    border-radius: 24px;
+    padding: 0 1.875vw;                       
+    border-radius: 0 0 24px 24px;
 
-    margin-bottom: 41px;
-    gap: 1.95vw;
+    margin-bottom: 10vw;
 
     background: ${global.colors.cinza1};
 `;
 
-export const BalaoInfo = styled.section `
+export const BalaoInfo = styled.section<{cor: string}> `
     display: flex;
     flex-direction: column;
-    border-radius: 16px;
+    justify-content: space-between;
 
+    padding: 1.875vw 1.25vw;
+    width: 20.39vw;
+    height: 13.75vw;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);                //ver no figma como é o dropshadow
     background-color: ${global.colors.branco};
-`;
-
-export const SubBalaoInfo = styled.section `
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-
+    
     border-radius: 16px;
-`;
-
-export const InfoTitle = styled.h3 `
-    font-family: ${global.fonts.quickSand};
-    font-size: 1.25vw;
-    font-weight: 700;
-
-    padding: 1.48vw 0 0 2.19vw;
-
-    color: ${global.colors.cinza};
+    border-left: 0.625vw solid ${props => {
+        switch (props.cor) {
+            case "almoco":
+                return global.colors.corAlmoco;
+            case "jantar":
+                return global.colors.corJanta;
+            case "pagamento":
+                return global.colors.cinza;
+        }
+    }};
 `;
 
 /*----------------------------------------------------------------------------*/
 
-export const InfoGrid = styled.div `
+export const TitleBalao = styled.section `
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    width: 100%;
-    height: 100%;
 `;
 
-export const InfoSubtitle = styled.p `
+export const InfoIcon = styled.img `
+    width: 1.875vw;
+`;
+
+export const InfoTitle = styled.h3<{cor: string}> `
     font-family: ${global.fonts.quickSand};
-    font-size: 0.94vw;
-    font-weight: 500;
+    font-size: 1.25vw;
+    font-weight: 700;
 
-    margin-top: auto;
-
-    align-self: start;                            //talves remover
-    padding-left: 3.75vw;                         //talves remover
-    
-    color: ${global.colors.cinzaClaro};
-`;
-
-export const InfoArea = styled.section `
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-    padding-bottom: 1.56vw;
-    
-    gap: 1.17vw;
+    color: ${props => {
+        switch (props.cor) {
+            case "almoco":
+                return global.colors.corAlmoco;
+            case "jantar":
+                return global.colors.corJanta;
+            case "pagamento":
+                return global.colors.cinza;
+        }
+    }};
 `;
 
 /*----------------------------------------------------------------------------*/
@@ -118,33 +111,22 @@ export const InfoArea = styled.section `
 export const InfoBalao = styled.div `
     display: flex;
     flex-direction: column;
-    width: 15.29vw;
-    height: 4.16vw;
 
-    padding: 0.70vw 0;
-    
-    align-items: center;
-    justify-content: center;
-
-    border: solid 1px ${global.colors.cinzaOpaco(0.16)};
-    border-radius: 16px;
+    padding-top: 1.25vw;
+    border-top: solid 1px ${global.colors.cinzaOpaco(0.16)};                  
 `;
 
 export const InfoUndertitle = styled.p `
-    padding-bottom: 0.63vw;
+    padding-bottom: 0.78125vw;
 
     font-family: ${global.fonts.quickSand};
-    font-size: 1.25vw;
+    font-size: 0.9375vw;
     font-weight: 500;
 
-    text-align: center;
-    color: ${global.colors.cinzaClaro};
+    color: ${global.colors.cinzaPratos};
 `;
 
-export const InfoValor = styled.h4 `
-    width: 70%;
-    
-    text-align: center;
+export const InfoValor = styled.h4 `    
     font-family: ${global.fonts.quickSand};
     font-size: 1.25vw;
     font-weight: 700;
