@@ -38,7 +38,7 @@ export const RestHeader = styled.header `
 
 export const RestTitle = styled.h1 `
     font-family: ${global.fonts.quickSand};
-    font-size: 4.44vw;
+    font-size: 3.33vw;
     font-weight: 800;
     color: black;
 `;
@@ -47,7 +47,7 @@ export const RestP = styled.p `
     margin: 1.18vh 0 0 0;
 
     font-family: ${global.fonts.nunito};
-    font-size: 2.44vw;
+    font-size: 2vw;
     font-weight: 600;
 
     text-align: center;
@@ -58,7 +58,7 @@ export const RestP = styled.p `
 
 export const RestButton = styled.button `
     display: flex;
-    width: 91.11%;
+    width: 70%;
     
     padding: 0.6vh 0;
 

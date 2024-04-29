@@ -3,8 +3,8 @@ import { global } from "../../globalStyle";
 
 export const RestSelectDiv = styled.section `
     display: grid;
-    grid-template-columns: 23.5vw 23.5vw;
-    grid-template-rows: 15vw 15vw;
+    grid-template-columns: 15.04vw 15.04vw;
+    grid-template-rows: 9.6vw 9.6vw;
     grid-gap: 2.22vw;
 `;
 
