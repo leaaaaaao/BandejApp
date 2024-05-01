@@ -1,16 +1,19 @@
 {
   "files": {
     "main.css": "./static/css/main.866e51cc.css",
-    "main.js": "./static/js/main.1a752c55.js",
+    "main.js": "./static/js/main.d7b0721a.js",
     "static/media/BgRu.svg": "./static/media/BgRu.edfd92bedd3fc141fe70abca60be6e72.svg",
     "static/media/LogoDevmob.svg": "./static/media/LogoDevmob.e42863f98003bac86e7021030a98a06c.svg",
     "static/media/LogoIC.svg": "./static/media/LogoIC.7efdb38fa68ecb5f2b00934b11ecedf3.svg",
     "static/media/RUcentral.jpg": "./static/media/RUcentral.f1db24c9e0dcf901eed8.jpg",
-    "static/media/Entrada.svg": "./static/media/Entrada.158222536e7d75ecddf202b960c210e9.svg",
+    "static/media/LogoUFRJ.svg": "./static/media/LogoUFRJ.2f677b5af2f3d262fd2335795a459c8e.svg",
     "service-worker.js": "./service-worker.js",
+    "static/media/Entrada.svg": "./static/media/Entrada.158222536e7d75ecddf202b960c210e9.svg",
     "static/media/Logo.svg": "./static/media/Logo.b5dd1b79182c2d64fbbfb84c54a99641.svg",
     "static/media/logo.svg": "./static/media/logo.9125a429a0b9a2bee7ee73cf9612d03a.svg",
+    "static/media/LogoWeb.svg": "./static/media/LogoWeb.f382e8a585a2b18db21cbf06bbb4da20.svg",
     "static/media/Guarnicao.svg": "./static/media/Guarnicao.5ebc93eb652b41761f2ebc2233d1c034.svg",
+    "static/media/TempCardapioWeb.svg": "./static/media/TempCardapioWeb.13b6753a700ee317297f81efa72f5f0a.svg",
     "static/media/PratoVegano.svg": "./static/media/PratoVegano.4bdd412488d5dc27958f52e6c9ec222b.svg",
     "static/media/nunito-all-400-normal.woff": "./static/media/nunito-all-400-normal.0c07f750f73ac5437580.woff",
     "static/media/ifcspv.png": "./static/media/ifcspv.2650769ccc6fbba32694.png",
@@ -34,16 +37,20 @@
     "static/media/bebas-neue-latin-ext-400-normal.woff2": "./static/media/bebas-neue-latin-ext-400-normal.f2363170269a33a9c268.woff2",
     "static/media/nunito-cyrillic-400-normal.woff2": "./static/media/nunito-cyrillic-400-normal.166e8e87ae0b6f3deed3.woff2",
     "static/media/TempAvaliacao.svg": "./static/media/TempAvaliacao.fbaaadb29b097847b84cb60af12bbf43.svg",
+    "static/media/TempNotificacaoWeb.svg": "./static/media/TempNotificacaoWeb.59728ba1e4cc9eb56c136e7e64e43425.svg",
     "static/media/nunito-vietnamese-400-normal.woff2": "./static/media/nunito-vietnamese-400-normal.6a8bc7acd205391fb71a.woff2",
-    "static/media/almoco.svg": "./static/media/almoco.81937e66da6563cace2facd697bdb017.svg",
+    "static/media/TempAvaliacaoWeb.svg": "./static/media/TempAvaliacaoWeb.62f17d16792f542bcbc7bd35a34b8a26.svg",
+    "static/media/almoco.svg": "./static/media/almoco.d70fb083eccc1069fa9be16c20e60b29.svg",
     "static/media/quicksand-vietnamese-400-normal.woff2": "./static/media/quicksand-vietnamese-400-normal.001708e70ef991eec89b.woff2",
     "static/media/spinner.svg": "./static/media/spinner.2bbb1a77902e2998d2217d6df3089963.svg",
+    "static/media/TempDownloadWeb.svg": "./static/media/TempDownloadWeb.02551990ad68048960fb2a6886a1c565.svg",
     "static/media/TempDownload.svg": "./static/media/TempDownload.a428bf6a94fc808afcbd49576d89b355.svg",
     "static/media/Pin.svg": "./static/media/Pin.194720339a696a491ce155209aa5da6c.svg",
     "static/media/download.svg": "./static/media/download.44e0d33b833843bad356af2a7916037b.svg",
     "static/media/comunicados.svg": "./static/media/comunicados.f2587be586d3a435e79c9af5a4995ceb.svg",
     "static/media/TempNotificacao.svg": "./static/media/TempNotificacao.5844adf3463022dc56212763c27f9edb.svg",
-    "static/media/jantar.svg": "./static/media/jantar.e6077aa23fb9a45d251432d7503605b2.svg",
+    "static/media/payments.svg": "./static/media/payments.eabc7618859fe21442ef17d9c31e6eeb.svg",
+    "static/media/jantar.svg": "./static/media/jantar.ec73c02cab8ea35c43e4c6483d92e4eb.svg",
     "static/media/cardapio.svg": "./static/media/cardapio.cbb28f91b374860bbcca2b84f92c1482.svg",
     "static/media/copiar.svg": "./static/media/copiar.e586886f449fa7bc161dee7bff4df8e2.svg",
     "static/media/faleconosco.svg": "./static/media/faleconosco.d97bae3eff0352c71aeea4212174051a.svg",
@@ -61,10 +68,10 @@
     "static/media/ArrowDown.svg": "./static/media/ArrowDown.58d508d255061cb733f550f8495f1126.svg",
     "static/media/menu.svg": "./static/media/menu.3104cc3bd86eef6bd8d0007e6387ae18.svg",
     "main.866e51cc.css.map": "./static/css/main.866e51cc.css.map",
-    "main.1a752c55.js.map": "./static/js/main.1a752c55.js.map"
+    "main.d7b0721a.js.map": "./static/js/main.d7b0721a.js.map"
   },
   "entrypoints": [
     "static/css/main.866e51cc.css",
-    "static/js/main.1a752c55.js"
+    "static/js/main.d7b0721a.js"
   ]
 }
